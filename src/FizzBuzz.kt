@@ -8,16 +8,14 @@ public class FizzBuzz {
         if(multiple(entier, 15)) {
             return "FizzBuzz"
         }
-        if (entier % 3 == 0) {
+        if(multiple(entier, 3)) {
             return "Fizz"
         }
-        if(entier % 5 == 0) {
+        if(multiple(entier, 5)) {
             return "Buzz"
         }
         return "$entier"
     }
 
-    private fun multiple(multiple: Int, diviseur: Int): Boolean {
-        return multiple % diviseur == 0
-    }
+    private fun multiple(multiple: Int, diviseur: Int) = multiple % diviseur == 0
 }

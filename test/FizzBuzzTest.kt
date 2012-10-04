@@ -45,7 +45,7 @@ public class FizzBuzzTest {
         verifie(15, "FizzBuzz", valeurs)
     }
 
-    private fun verifie(entier: Int, attendu: String, valeurs: Array<String>): Unit {
+    private fun verifie(entier: Int, attendu: String, valeurs: Array<String>) {
         assertThat(valeurs[entier - 1])?.isEqualTo(attendu)
     }
 }
